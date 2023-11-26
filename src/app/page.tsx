@@ -3,19 +3,13 @@ import {Button} from "@nextui-org/react";
 import CustomButton from "@/components/Button";
 import Navbar from "@/components/Navbar";
 import Card from "@/components/Card";
+import NewsCard from "@/components/NewsCard";
 
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Navbar />
-
-      <Button color="primary">
-        Button
-      </Button>
-
-      <Card />
-
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -86,6 +80,15 @@ export default function Home() {
           </p>
         </a>
       </div>
+
+      {/*<Button color="primary">
+        Button
+      </Button>*/}
+
+      <NewsCard />
+
+      <Card />
+
     </main>
   )
 }
