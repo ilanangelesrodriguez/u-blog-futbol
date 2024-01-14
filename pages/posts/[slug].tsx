@@ -50,8 +50,8 @@ const PostDetail = ({ post, morePosts, errors }: Props) => {
                     minHeight={'360px'}
                 />
             </Box>
-            <Box d="flex" flexDirection={{ base: 'column', md: 'row' }}>
-                <Box as="section" d="flex" flex="3">
+            <Box display="flex" flexDirection={{ base: 'column', md: 'row' }}>
+                <Box as="section" display="flex" flex="3">
                     <Box as="article" margin=".5rem">
                         <Heading marginY="1.4rem" color={colors.secondary}>
                             {_.upperFirst(post?.title)}
@@ -76,7 +76,7 @@ const PostDetail = ({ post, morePosts, errors }: Props) => {
                 <Heading marginX="1.4rem" marginTop="2rem" fontSize={'1.6rem'} color={colors.default} fontWeight="300">
                     Browse More News
                 </Heading>
-                <Box d="flex" flexDirection="column" flex="4" as="section" margin={'.3rem'}>
+                <Box display="flex" flexDirection="column" flex="4" as="section" margin={'.3rem'}>
                     {morePosts?.map((post) => {
                         return (
                             <PostCard
@@ -108,6 +108,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         const item = posts.find((data) => data.slug === slug);
         return { props: { post: item, morePosts: posts.slice(0, 6) } };
     } catch (err) {
-        return { props: { errors: err.message } };
+        return { props: { errors: (err as Error).message } };
     }
 };

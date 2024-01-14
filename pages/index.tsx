@@ -50,8 +50,8 @@ const IndexPage = ({ posts }: Props) => {
             <Heading marginX=".1em" marginTop="1em" fontSize={'1.6em'} color={colors.default} fontWeight="300">
                 Últimas noticias
             </Heading>
-            <Box d="flex" flexDirection={{ base: 'column', lg: 'row' }}>
-                <Box d="flex" flexDirection="column" flex="4" as="section" marginY={'.7em'}>
+            <Box display="flex" flexDirection={{ base: 'column', lg: 'row' }}>
+                <Box display="flex" flexDirection="column" flex="4" as="section" marginY={'.7em'}>
                     {items.length > 4 &&
                         items.slice(4, 4 + latestPostsLength).map((post) => {
                             return <PostCard post={post} key={post.id} onClick={() => onClickPost(post.slug)} />;
@@ -89,7 +89,7 @@ export const getStaticProps: GetStaticProps = async ({}) => {
     try {
         return { props: { posts: allPosts } };
     } catch (err) {
-        return { props: { errors: err.message } };
+        return { props: { errors: (err as Error).message } };
     }
 };
 

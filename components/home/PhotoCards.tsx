@@ -33,7 +33,7 @@ const PhotoCards: React.FC<Props> = ({
     }, [isLargerThanMd]);
 
     return (
-        <Box flex={1} d="flex" maxHeight={`${maxContainerHeight}px`} flexDirection={{ base: 'column', md: 'row' }}>
+        <Box flex={1} display="flex" maxHeight={`${maxContainerHeight}px`} flexDirection={{ base: 'column', md: 'row' }}>
             <PhotoCard
                 title={post1.title}
                 imgSrc={post1.img}
@@ -42,7 +42,7 @@ const PhotoCards: React.FC<Props> = ({
                 alt={`Picture of ${post1.title}`}
                 onClick={() => onClickPost(post1)}
             />
-            <Box margin="0px" d="flex" flex={2} flexDirection="column">
+            <Box margin="0px" display="flex" flex={2} flexDirection="column">
                 <PhotoCard
                     title={post2.title}
                     imgSrc={post2.img}
@@ -51,7 +51,7 @@ const PhotoCards: React.FC<Props> = ({
                     margin={`${margin}px`}
                     onClick={() => onClickPost(post2)}
                 />
-                <Box margin="0px" d="flex" flex={1} height={'100%'} flexDirection={{ base: 'column', md: 'row' }}>
+                <Box margin="0px" display="flex" flex={1} height={'100%'} flexDirection={{ base: 'column', md: 'row' }}>
                     <PhotoCard
                         maxHeight={`${maxHalfPhotoHeight}px`}
                         title={post3.title}

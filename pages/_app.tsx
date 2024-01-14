@@ -6,7 +6,7 @@ import { Chakra } from '../Chakra';
 
 function Application({ Component, pageProps }: AppProps) {
     return (
-        <Chakra cookies={pageProps.cookies}>
+        <Chakra cookies={pageProps.cookies as any}>
             <Fonts />
             <Component {...pageProps} />
         </Chakra>

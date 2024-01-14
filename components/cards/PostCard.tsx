@@ -69,7 +69,7 @@ const PostCard = ({
                     fontSize="lg"
                     lineHeight="normal"
                     fontWeight="semibold"
-                    href="#"
+                    
                     color={colors.secondary}
                 >
                     {_.upperFirst(post.title)}

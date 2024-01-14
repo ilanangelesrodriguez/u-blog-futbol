@@ -10,9 +10,10 @@ const handler = (_req: NextApiRequest, res: NextApiResponse) => {
 
         if (!post) return res.status(404).json({ error: 'Post not found' });
         res.status(200).json(post);
-    } catch (err) {
+    } catch (err: any) {
         res.status(500).json({ statusCode: 500, message: err.message });
     }
 };
 
 export default handler;
+

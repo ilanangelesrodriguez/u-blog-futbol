@@ -53,7 +53,7 @@ const Navbar: React.FC<Props> = () => {
                             );
                         })}
                     </Stack>
-                    <ThemeToggler d={{ base: 'none', md: 'flex' }} />
+                    <ThemeToggler display={{ base: 'none', md: 'flex' }} />
                 </Box>
                 <DrawerMenu isOpen={isOpen} onClose={() => setIsOpen(false)}>
                     {NAVBAR_LINKS.map(({ to, name }) => {
@@ -63,7 +63,7 @@ const Navbar: React.FC<Props> = () => {
                             </MenuItem>
                         );
                     })}
-                    <ThemeToggler onClick={() => setIsOpen(false)} w="100%" d={{ base: 'flex', md: 'none' }} />
+                    <ThemeToggler onClick={() => setIsOpen(false)} w="100%" display={{ base: 'flex', md: 'none' }} />
                 </DrawerMenu>
             </Flex>
         </Box>
