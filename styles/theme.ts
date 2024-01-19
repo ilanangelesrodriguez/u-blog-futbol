@@ -1,24 +1,24 @@
 export const colors = {
-    primary: '#E31421',
+    primary: '#8A2F36',
     default: {
-        light: '#494949',
-        dark: '#f0f0f0',
+        light: '#8A2F36',
+        dark: '#ffffff',
     },
     secondary: {
-        light: '#08002F',
-        dark: '#fff',
+        light: '#8A2F36',
+        dark: '#ffffff',
     },
     light: {
-        light: '#f0f0f0',
-        dark: '#333',
+        light: '#8A2F36',
+        dark: '#BBA782',
     },
     background: {
-        light: '#fefefe"',
-        dark: '#273746',
+        light: '#E5E1D5',
+        dark: '#666666',
     },
     border: {
         light: '#E2E8F0',
-        dark: '#333',
+        dark: '#666666',
     },
 };
 

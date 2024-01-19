@@ -42,7 +42,6 @@ export const FOOTER_LINKS = [
             { href: '/', title: 'LinkedIn' },
             { href: '/', title: 'Facebook' },
             { href: '/', title: 'Twitter' },
-            { href: '/', title: 'Instagram' },
         ],
     },
 ];

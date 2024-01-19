@@ -11,7 +11,7 @@ const NewsletterForm = ({ onSubmitForm, ...props }: Props) => {
             <Text color="primary" fontWeight="bold" margin=".5rem">
                 Suscribete a nuestro newsletter
             </Text>
-            <Input variant="outline" placeholder="Your Email Address" borderRadius={'full'} margin=".5rem" />
+            <Input variant="outline" placeholder="Introduce tu correo eléctronico" borderRadius={'full'} margin=".5rem" />
             <Button bgColor="primary" color="light" borderRadius={'full'} width="100%" margin=".5rem">
                 Suscribir
             </Button>

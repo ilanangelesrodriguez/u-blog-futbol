@@ -1,3 +1,27 @@
 html {
     scroll-behavior: smooth;
 }
+
+.colors {
+    color: #E31421;
+}
+    .default {
+        color: #494949;
+        background-color: #f0f0f0;
+    }
+    secondary {
+        color: #08002F;
+        background-color: #fff
+    }
+    light {
+        color: #f0f0f0;
+        background-color: #333
+    }
+    background {
+        color: #ffffff;
+        background-color: #273746
+    }
+    border {
+        color: #E2E8F0;
+        background-color: #333
+    }

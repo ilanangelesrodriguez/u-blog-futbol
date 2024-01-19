@@ -78,7 +78,7 @@ const IndexPage = ({ posts }: Props) => {
                         })}
                     </Box>
                     <NewsletterForm onSubmitForm={() => {}} marginY="10px" />
-                    <SocialCard title="Follow Us" facebook twitter linkedin youtube instagram onClick={() => {}} />
+                    <SocialCard title="Sigueme" facebook twitter linkedin onClick={() => {}} />
                 </Box>
             </Box>
         </Layout>

@@ -1,9 +1,9 @@
 import { Box, IconButton, Text } from '@chakra-ui/react';
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import React, { ReactElement } from 'react';
 import Card from './Card';
 
-type SocialMedia = 'facebook' | 'twitter' | 'youtube' | 'instagram' | 'linkedin';
+type SocialMedia = 'facebook' | 'twitter' | 'linkedin';
 
 type SocialMediaItem = {
     platform: SocialMedia;
@@ -23,14 +23,6 @@ const socialMedias: SocialMediaItem[] = [
         platform: 'linkedin',
         icon: <FaLinkedin />,
     },
-    {
-        platform: 'youtube',
-        icon: <FaYoutube />,
-    },
-    {
-        platform: 'instagram',
-        icon: <FaInstagram />,
-    },
 ];
 
 interface Props {
@@ -38,8 +30,6 @@ interface Props {
     facebook?: boolean;
     linkedin?: boolean;
     twitter?: boolean;
-    instagram?: boolean;
-    youtube?: boolean;
     onClick: (platform: SocialMedia) => void;
 }
 
